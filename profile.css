@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profileuser-container{
+    padding: 1rem 3rem;
+   
+}
+
+.profile-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;    
+    margin: 1rem 0;
+}
+    
+.user-img-and-email{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.userimg{
+
+    width: 100%;    
+    width: 11rem;     
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 2px solid #dbb42c;
+}
+
+.user-name-email{
+    display: grid;
+    line-height: 40px;  
+}
+
+.user-name-email h1{
+    font-size: clamp(2rem, 0.75rem + 4vw, 3rem);
+}
+
+.user-name-email .user-email{
+    font-size: clamp(0.8rem, 0.425rem + 1.2vw, 1.1rem);
+}
+
+.user-content{
+    display: flex;
+    margin: 2rem 0;
+}
+
+.menuicon{
+    display: none;
+}
+
+.user-container-wrapper{
+    display: grid ;
+    gap: 0.5rem;
+    width: 213px;
+}   
+
+.profile-select{
+    cursor: pointer;
+    padding: 0.8rem 0.8rem;
+    font-size: clamp(0.7rem, -0.075rem + 2.8vw, 1.2rem);
+    text-align: start;
+    padding-left: 5px   ;
+}
+
+.profile-select:hover{
+    color:#dbb42c;
+}
+
+.user-container{
+    border: 2px solid #dbb42c;
+    width: 100%;
+}
+.p{
+    background-color: #dbb42c;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px       ;
+}
+
+.p:hover{
+    color: white    ;
+}
+
+@media only screen and (max-width: 550px){
+    .user-container-wrapper{
+        display: none;
+    }
+    .user-container{
+        width: 100% ;
+        height: 500px;
+    }
+    .user-content{
+        flex-direction: column;
+    }
+    .menuicon{
+        display: block;
+        justify-content:center  ;
+        align-items: center;
+        text-align: center;
+        font-size: 1.5  rem;
+    }
+    .menuicon i{
+        font-size: 1.5rem;  
+    };
+}
+
+.recent{    
+    margin: 1rem 0rem;
+    padding-left: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-left:4px solid #dbb42c;
+}
+
+.item-recent img{
+    width: 100%;
+    max-width: 350px;   
+    height: 250px;
+    border-radius: 5px;
+}
+.item-recent img:hover{
+    border: 0.3px solid #dbb42c;
+}
+.recent-wrap{
+    padding: 1rem 3rem;
+}
